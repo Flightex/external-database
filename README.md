@@ -42,7 +42,7 @@ To make requests, please follow the following format below.  You can also use ou
 ```javascript
 { 
   "token": "Your API token here",
-  "Content-Type: "application/json"
+  "Content-Type": "application/json"
 }
 ```
 * Body: 
@@ -63,7 +63,7 @@ To make requests, please follow the following format below.  You can also use ou
 ```javascript
 { 
   "token": "Your API token here",
-  "Content-Type: "application/json"
+  "Content-Type": "application/json"
 }
 ```
 * Body: 
@@ -82,7 +82,7 @@ To make requests, please follow the following format below.  You can also use ou
 * Headers: 
 ```javascript
 { 
-  "Content-Type: "application/json"
+  "Content-Type": "application/json"
 }
 ```
 * Body: `N/A`
