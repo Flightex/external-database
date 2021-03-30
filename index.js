@@ -1,5 +1,4 @@
 const express = require("express");
-const fetch = require("node-fetch");
 const app = express();
 const fs = require("fs");
 const marked = require("marked");
@@ -65,7 +64,7 @@ app.post("/get", async (req, res) => {
 	res.status(200).send((d == undefined || d == null) ? "undefined" : d.toString())
 })
 
-app.post("/ping", async (req, res) => {
+app.get("/ping", async (req, res) => {
 	var used = process.memoryUsage().heapUsed / 1024 / 1024;
 	var total = process.memoryUsage().heapTotal / 1024 / 1024;
 	var ramTotal = Math.round(total * 100) / 100
