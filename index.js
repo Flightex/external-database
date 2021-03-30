@@ -6,7 +6,7 @@ const {
 	dbURI,
 	port,
 	token
-} = require("config.js");
+} = require("./config.js");
 
 const Keyv = require("keyv");
 const db = new Keyv(dbURI);
