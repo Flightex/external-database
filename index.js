@@ -1,7 +1,8 @@
 const express = require("express");
 const fetch = require("node-fetch");
 const app = express();
-const fs = require('fs');
+const fs = require("fs");
+const marked = require("marked");
 const {
 	dbURI,
 	port,
@@ -26,6 +27,12 @@ const returnError = async (res, httpCode, message, path) => {
 	};
 	res.status(httpCode).send(fullError);
 }
+
+app.get("/", async (req, res) => {
+  let path = __dirname + '/README.md';
+  let file = fs.readFileSync(path, 'utf8');
+  res.status(200).send(marked(file.toString()));
+})
 
 app.post("/set", async (req, res) => {
 	if (req.header.token !== token) {
