@@ -1,2 +1,6 @@
 # IDE
 *.replit
+
+# Package Files
+package-lock.json
+package.json
