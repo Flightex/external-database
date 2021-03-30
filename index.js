@@ -29,9 +29,9 @@ const returnError = async (res, httpCode, message, path) => {
 }
 
 app.get("/", async (req, res) => {
-  let path = __dirname + '/README.md';
-  let file = fs.readFileSync(path, 'utf8');
-  res.status(200).send(marked(file.toString()));
+	let path = __dirname + '/README.md';
+	let file = fs.readFileSync(path, 'utf8');
+	res.status(200).send(marked(file.toString()));
 })
 
 app.post("/set", async (req, res) => {
