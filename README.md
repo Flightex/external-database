@@ -76,7 +76,7 @@ To make requests, please follow the following format below.  You can also use ou
 ```
 * Returns: `200 - OK` & String Data
 
-#### Posting Data to the Database
+#### Pinging Database
 * Method: `GET`
 * Path: `/ping`
 * Headers: 
