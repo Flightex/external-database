@@ -34,7 +34,7 @@ app.get("/", async (req, res) => {
 })
 
 app.post("/set", async (req, res) => {
-	if (req.header.token !== token) {
+	if (req.headers.token !== token) {
 		returnError(res, 401, "Invalid or missing API token!", "/set");
 		res.end();
 		return;
@@ -50,7 +50,7 @@ app.post("/set", async (req, res) => {
 });
 
 app.post("/get", async (req, res) => {
-	if (req.header.token !== token) {
+	if (req.headers.token !== token) {
 		returnError(res, 401, "Invalid or missing API token!", "/get");
 		res.end();
 		return;
