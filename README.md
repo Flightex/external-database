@@ -10,7 +10,6 @@ You'll need the following packages installed:
 * `keyv`
 * `@keyv/sqlite`
 * `body-parser`
-test
 
 To quickly install all files, you can run
 
