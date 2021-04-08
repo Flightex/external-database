@@ -62,13 +62,13 @@ To make requests, please follow the following format below.  You can also use ou
 <details>
 <summary>Javascript POST Example</summary>
 <br>
-```javascript
+<pre><code>
 fetch("http://ip:port/set", {
   "method": "post",
   "headers": "{ \"Content-Type\": \"application/json\", \"token\": \"Your API token here\" }",
   "body": "{ \"data\": { \"key\": \"Key to post\", \"value\": \"Value to post\" } }"
 });
-```
+</code></pre>
 </details>
 
 #### Getting Data from the Database
@@ -93,12 +93,12 @@ fetch("http://ip:port/set", {
 <details>
 <summary>Javascript GET Example</summary>
 <br>
-```javascript
+<pre><code>
 fetch("http://ip:port/get", {
   "method": "get",
   "headers": "{ \"Content-Type\": \"application/json\", \"token\": \"Your API token here\" }"
 });
-```
+</code></pre>
 </details>
 
 #### Pinging Database
@@ -115,12 +115,12 @@ fetch("http://ip:port/get", {
 <details>
 <summary>Javascript PING Example</summary>
 <br>
-```javascript
+<pre><code>
 fetch("http://ip:port/ping", {
   "method": "get",
   "headers": "{ \"Content-Type\": \"application/json\" }"
 });
-```
+</code></pre>
 </details>
 
 ## Support
