@@ -35,18 +35,20 @@ To deploy the server, simply run `node index.js`.  It will log in the console wi
 ## Requests
 To make requests, please follow the following format below.  You can also use our client (where you won't really have to worry about these requests) which will be available to the public soon.
 
+> ⚠️ **Notice**: This database uses a `key`, `value` system where your `key` is the name or title of what you're storing and the `value` is the content you are storing under the `key`.
+
 #### Posting Data to the Database
 * Method: `POST`
 * Path: `/set`
 * Headers: 
-```javascript
+```json
 { 
   "token": "Your API token here",
   "Content-Type": "application/json"
 }
 ```
 * Body: 
-```javascript
+```json
 {
   "data": {
     "key": "Key to post",
@@ -60,14 +62,14 @@ To make requests, please follow the following format below.  You can also use ou
 * Method: `POST`
 * Path: `/get`
 * Headers: 
-```javascript
+```json
 { 
   "token": "Your API token here",
   "Content-Type": "application/json"
 }
 ```
 * Body: 
-```javascript
+```json
 {
   "data": {
     "key": "Key to fetch"
@@ -80,7 +82,7 @@ To make requests, please follow the following format below.  You can also use ou
 * Method: `GET`
 * Path: `/ping`
 * Headers: 
-```javascript
+```json
 { 
   "Content-Type": "application/json"
 }
