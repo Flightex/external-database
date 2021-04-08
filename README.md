@@ -37,6 +37,8 @@ To make requests, please follow the following format below.  You can also use ou
 
 > ⚠️ **Notice**: This database uses a `key`, `value` system where your `key` is the name or title of what you're storing and the `value` is the content you are storing under the `key`.
 
+> ➕ **Languages:** In each request, we will add a language example for sending a request to the database.  If you would like to include an example for a language you use, please make a pull request.  Please observe the markdown formatting as well.
+
 #### Posting Data to the Database
 * Method: `POST`
 * Path: `/set`
@@ -57,6 +59,17 @@ To make requests, please follow the following format below.  You can also use ou
 }
 ```
 * Returns: `204 - No Content`
+<details>
+<summary>Javascript POST Example</summary>
+<br>
+```javascript
+fetch("http://ip:port/set", {
+  "method": "post",
+  "headers": "{ \"Content-Type\": \"application/json\", \"token\": \"Your API token here\" }",
+  "body": "{ \"data\": { \"key\": \"Key to post\", \"value\": \"Value to post\" } }"
+});
+```
+</details>
 
 #### Getting Data from the Database
 * Method: `POST`
@@ -77,6 +90,16 @@ To make requests, please follow the following format below.  You can also use ou
 }
 ```
 * Returns: `200 - OK` & String Data
+<details>
+<summary>Javascript GET Example</summary>
+<br>
+```javascript
+fetch("http://ip:port/get", {
+  "method": "get",
+  "headers": "{ \"Content-Type\": \"application/json\", \"token\": \"Your API token here\" }"
+});
+```
+</details>
 
 #### Pinging Database
 * Method: `GET`
@@ -89,6 +112,16 @@ To make requests, please follow the following format below.  You can also use ou
 ```
 * Body: `N/A`
 * Returns: `200 - OK` & `"Pong"`
+<details>
+<summary>Javascript PING Example</summary>
+<br>
+```javascript
+fetch("http://ip:port/ping", {
+  "method": "get",
+  "headers": "{ \"Content-Type\": \"application/json\" }"
+});
+```
+</details>
 
 ## Support
 If you need help with this, you can [join our Discord Support Server](https://discord.com/invite/7va3rtC).  We will happily help you there!
