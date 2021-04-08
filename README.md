@@ -68,6 +68,11 @@ To make requests, please follow the following format below.  You can also use ou
   "body": "{ \"data\": { \"key\": \"Key to post\", \"value\": \"Value to post\" } }"
 });</code></pre>
 </details>
+<details>
+<summary>Python POST Example</summary>
+<br>
+<pre><code>requests.post("http://ip:port/set", headers={ "token": "Your API token here" }, json={ "data": { "key": "Key to post", "value": "Value to post" } } )</code></pre>
+</details>
 
 #### Getting Data from the Database
 * Method: `POST`
@@ -96,6 +101,10 @@ To make requests, please follow the following format below.  You can also use ou
   "headers": "{ \"Content-Type\": \"application/json\", \"token\": \"Your API token here\" }"
 });</code></pre>
 </details>
+<summary>Python GET Example</summary>
+<br>
+<pre><code>requests.get("http://ip:port/set", headers={ "token": "Your API token here" })</code></pre>
+</details>
 
 #### Pinging Database
 * Method: `GET`
@@ -115,6 +124,11 @@ To make requests, please follow the following format below.  You can also use ou
   "method": "get",
   "headers": "{ \"Content-Type\": \"application/json\" }"
 });</code></pre>
+</details>
+</details>
+<summary>Python PING Example</summary>
+<br>
+<pre><code>requests.get("http://ip:port/set")</code></pre>
 </details>
 
 ## Support
