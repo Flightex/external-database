@@ -104,7 +104,7 @@ To make requests, please follow the following format below.  You can also use ou
 <details>
 <summary>Python GET Example</summary>
 <br>
-<pre><code>requests.get("http://ip:port/set", headers={ "token": "Your API token here" })</code></pre>
+<pre><code>requests.get("http://ip:port/get", headers={ "token": "Your API token here" })</code></pre>
 </details>
 
 #### Pinging Database
@@ -129,7 +129,7 @@ To make requests, please follow the following format below.  You can also use ou
 <details>
 <summary>Python PING Example</summary>
 <br>
-<pre><code>requests.get("http://ip:port/set")</code></pre>
+<pre><code>requests.get("http://ip:port/ping")</code></pre>
 </details>
 
 ## Support
