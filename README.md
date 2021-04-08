@@ -101,6 +101,7 @@ To make requests, please follow the following format below.  You can also use ou
   "headers": "{ \"Content-Type\": \"application/json\", \"token\": \"Your API token here\" }"
 });</code></pre>
 </details>
+<details>
 <summary>Python GET Example</summary>
 <br>
 <pre><code>requests.get("http://ip:port/set", headers={ "token": "Your API token here" })</code></pre>
@@ -125,7 +126,7 @@ To make requests, please follow the following format below.  You can also use ou
   "headers": "{ \"Content-Type\": \"application/json\" }"
 });</code></pre>
 </details>
-</details>
+<details>
 <summary>Python PING Example</summary>
 <br>
 <pre><code>requests.get("http://ip:port/set")</code></pre>
