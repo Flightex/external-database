@@ -33,7 +33,7 @@ To deploy the server, simply run `node index.js`.  It will log in the console wi
 
 
 ## Requests
-To make requests, please follow the following format below.  You can also use our client (where you won't really have to worry about these requests) which will be available to the public soon.
+To make requests, please follow the following format below.  You can also use our client (where you won't really have to worry about these requests).  Our client is available [here](https://github.com/Flightex/external-database-client).
 
 > ⚠️ **Notice**: This database uses a `key`, `value` system where your `key` is the name or title of what you're storing and the `value` is the content you are storing under the `key`.
 
