@@ -14,7 +14,6 @@
 
 # Package Files
 package-lock.json
-package.json
 
 # Database Files
 *.sqlite

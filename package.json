@@ -1,0 +1,29 @@
+{
+  "name": "external-database",
+  "version": "1.0.0",
+  "description": "External database that our projects such as Bot Bumper uses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flightex/external-database.git"
+  },
+  "keywords": [],
+  "author": "Airbus-A330",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flightex/external-database/issues"
+  },
+  "homepage": "https://github.com/Flightex/external-database#readme",
+  "dependencies": {
+    "@keyv/sqlite": "^2.0.2",
+    "body-parser": "^1.19.0",
+    "config.js": "^0.1.0",
+    "express": "^4.17.1",
+    "keyv": "^4.0.3",
+    "marked": "^2.0.1",
+    "node-fetch": "^2.6.1"
+  }
+}
