@@ -133,7 +133,7 @@ To make requests, please follow the following format below.  You can also use ou
 </details>
 
 ## Support
-If you need help with this, you can [join our Discord Support Server](https://discord.com/invite/7va3rtC).  We will happily help you there!
+If you need help with this, you can create an issue on this repository or you can [join our Discord Support Server](https://discord.com/invite/7va3rtC).  We will happily help you!
 
 
 If you want to contribute to this, you can submit a pull request and we'll happily review it!
